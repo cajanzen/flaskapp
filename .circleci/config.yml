@@ -16,6 +16,8 @@ jobs:
           name: Test
 
   deploy-job:
+    docker:
+      - image: alpine
     steps:
       - add_ssh_keys:
           fingerprints:
