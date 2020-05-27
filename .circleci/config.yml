@@ -22,7 +22,8 @@ jobs:
             - "9c:9f:c7:c8:9c:03:f2:fd:c2:40:e9:8d:01:7d:ee:0f"
       - run:
           name: Deploy over SSH
-          command: ssh $SSH_USER@$SSH_HOST "./redeploy.sh"
+          command: |
+            ssh $SSH_USER@$SSH_HOST "./redeploy.sh"
 
 workflows:
   main:
