@@ -17,7 +17,7 @@ jobs:
 
   deploy-job:
     docker:
-      - image: alpine
+      - image: kroniak/ssh-client
     steps:
       - add_ssh_keys:
           fingerprints:
